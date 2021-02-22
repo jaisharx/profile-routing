@@ -3,15 +3,15 @@ import styles from './styles.module.scss';
 
 function List({ data }) {
     return (
-        <ul className={styles.list}>
+        <ol className={styles.list}>
             {data.map((item) => (
-                <li>
+                <li key={item.id}>
                     <Link href={`/posts/${item.id}`}>
                         <a>{item.title}</a>
                     </Link>
                 </li>
             ))}
-        </ul>
+        </ol>
     );
 }
 

@@ -7,7 +7,10 @@ function Container({ children }) {
 
             <style jsx>{`
                 .container {
-                    text-align: center;
+                    padding: 1.6rem;
+                    display: grid;
+                    place-items: center;
+                    min-height: 100vh;
                     max-width: 60rem;
                     margin: 0 auto;
                 }
