@@ -11,13 +11,13 @@ export default function Home({ data }) {
             </Head>
 
             <Container>
-                <List data={data} />
+                <List data={data} renderingType="ssg" />
             </Container>
         </>
     );
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps() {
     const res = await fetch('https://jsonplaceholder.typicode.com/posts');
     const data = await res.json();
 
