@@ -6,7 +6,7 @@ export default function Home({ data }) {
     return (
         <>
             <Head>
-                <title>Profiles</title>
+                <title>Profiles - SSG</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
